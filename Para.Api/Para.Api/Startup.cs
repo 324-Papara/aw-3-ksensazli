@@ -39,7 +39,6 @@ public class Startup
 
         var connectionStringSql = Configuration.GetConnectionString("MsSqlConnection");
         services.AddDbContext<ParaDbContext>(options => options.UseSqlServer(connectionStringSql));
-        //services.AddDbContext<ParaDbContext>(options => options.UseNpgsql(connectionStringPostgre));
   
 
         services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -70,6 +69,7 @@ public class Startup
 
         app.UseMiddleware<HeartbeatMiddleware>();
         app.UseMiddleware<ErrorHandlerMiddleware>();
+        app.UseMiddleware<RequestResponseMiddleware>();
         
         app.UseHttpsRedirection();
         app.UseRouting();
