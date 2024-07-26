@@ -1,4 +1,5 @@
 using AutoMapper;
+using FluentValidation;
 using MediatR;
 using Para.Base.Response;
 using Para.Bussiness.Cqrs;
@@ -11,15 +12,18 @@ namespace Para.Bussiness.Command;
 public class CustomerCommandHandler :
     IRequestHandler<CreateCustomerCommand, ApiResponse<CustomerResponse>>,
     IRequestHandler<UpdateCustomerCommand, ApiResponse>,
-    IRequestHandler<DeleteCustomerCommand, ApiResponse>
+    IRequestHandler<DeleteCustomerCommand, ApiResponse>,
+    IRequestHandler<ValidateCustomerCommand, ApiResponse>
 {
     private readonly IUnitOfWork unitOfWork;
     private readonly IMapper mapper;
+    private readonly IValidator<CustomerRequest> validator;
 
-    public CustomerCommandHandler(IUnitOfWork unitOfWork, IMapper mapper)
+    public CustomerCommandHandler(IUnitOfWork unitOfWork, IMapper mapper, IValidator<CustomerRequest> validator)
     {
         this.unitOfWork = unitOfWork;
         this.mapper = mapper;
+        this.validator = validator;
     }
 
     public async Task<ApiResponse<CustomerResponse>> Handle(CreateCustomerCommand request, CancellationToken cancellationToken)
@@ -46,6 +50,22 @@ public class CustomerCommandHandler :
     {
         await unitOfWork.CustomerRepository.Delete(request.CustomerId);
         await unitOfWork.Complete();
+        return new ApiResponse();
+    }
+
+    public async Task<ApiResponse> Handle(ValidateCustomerCommand request, CancellationToken cancellationToken)
+    {
+        var validationResult = await validator.ValidateAsync(request.CustomerRequest, cancellationToken);
+
+        if (!validationResult.IsValid)
+        {
+            var errorResponse = new ApiResponse()
+            {
+                Message = validationResult.Errors.FirstOrDefault()?.ErrorMessage
+            };
+            return errorResponse;
+        }
+
         return new ApiResponse();
     }
 }

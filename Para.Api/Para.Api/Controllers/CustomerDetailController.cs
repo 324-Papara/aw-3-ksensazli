@@ -36,9 +36,9 @@ namespace Para.Api.Controllers
         }
 
         [HttpPost]
-        public async Task<ApiResponse<CustomerDetailResponse>> Post([FromBody] CustomerDetailRequest value)
+        public async Task<ApiResponse<CustomerDetailResponse>> Post(long customerDetailId,[FromBody] CustomerDetailRequest value)
         {
-            var operation = new CreateCustomerDetailCommand(value);
+            var operation = new CreateCustomerDetailCommand(customerDetailId, value);
             var result = await mediator.Send(operation);
             return result;
         }
