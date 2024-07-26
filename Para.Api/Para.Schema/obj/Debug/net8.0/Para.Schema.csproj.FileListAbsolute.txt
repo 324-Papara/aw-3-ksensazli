@@ -1,0 +1,16 @@
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/bin/Debug/net8.0/Para.Schema.deps.json
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/bin/Debug/net8.0/Para.Schema.dll
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/bin/Debug/net8.0/Para.Schema.pdb
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/bin/Debug/net8.0/Para.Base.dll
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/bin/Debug/net8.0/Para.Base.pdb
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/obj/Debug/net8.0/Para.Schema.csproj.AssemblyReference.cache
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/obj/Debug/net8.0/Para.Schema.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/obj/Debug/net8.0/Para.Schema.AssemblyInfoInputs.cache
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/obj/Debug/net8.0/Para.Schema.AssemblyInfo.cs
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/obj/Debug/net8.0/Para.Schema.csproj.CoreCompileInputs.cache
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/obj/Debug/net8.0/Para.Schema.sourcelink.json
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/obj/Debug/net8.0/Para.Sch.F9E7B0A7.Up2Date
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/obj/Debug/net8.0/Para.Schema.dll
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/obj/Debug/net8.0/refint/Para.Schema.dll
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/obj/Debug/net8.0/Para.Schema.pdb
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/obj/Debug/net8.0/ref/Para.Schema.dll

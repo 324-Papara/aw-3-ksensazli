@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "TU2NCJt7SRE1+XXHng7ivvyu2/GsGIlwEbCpmq7/JmKDv+GS2wv8rp9341i44LLl0ObKqQmHPyMBfeP1ug1ddQ==",
+  "dgSpecHash": "nK6c1q2sB9mU+C4WAWJ3l0dRSNqJowbgULegjl5UAqfuGQyk5zihsVsJdx79POjd/ds3OIicmH/zWHEXyQH0xA==",
   "success": true,
   "projectFilePath": "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Data/Para.Data.csproj",
   "expectedPackageFiles": [
     "/Users/ksensazli/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
+    "/Users/ksensazli/.nuget/packages/fluentvalidation/11.9.2/fluentvalidation.11.9.2.nupkg.sha512",
+    "/Users/ksensazli/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/Users/ksensazli/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.9.2/fluentvalidation.dependencyinjectionextensions.11.9.2.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/microsoft.codeanalysis.analyzers/3.3.3/microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",

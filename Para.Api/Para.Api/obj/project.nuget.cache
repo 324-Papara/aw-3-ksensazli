@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "eR1sR8hWpb37lR8bch2hs86V5WqdXwKubUq/FuyaAr8zfLFm0YLQ0pI5vNTQegYU1PY5FbUyRXa7gk0kghi/Qw==",
+  "dgSpecHash": "Kn6ZUcwfdn+d1hAosibhamU4LJCPCiJAX0czCJX35uAfW10w/oNR2IBSyP4T6vkWAOhNze9kVn8AOxiylm1xzA==",
   "success": true,
   "projectFilePath": "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Api/Para.Api.csproj",
   "expectedPackageFiles": [
     "/Users/ksensazli/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
+    "/Users/ksensazli/.nuget/packages/fluentvalidation/11.9.2/fluentvalidation.11.9.2.nupkg.sha512",
+    "/Users/ksensazli/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "/Users/ksensazli/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.9.2/fluentvalidation.dependencyinjectionextensions.11.9.2.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/humanizer/2.14.1/humanizer.2.14.1.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/humanizer.core.af/2.14.1/humanizer.core.af.2.14.1.nupkg.sha512",

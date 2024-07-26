@@ -11,7 +11,7 @@ public class CustomerPhone : BaseEntity
     public virtual Customer Customer { get; set; }
     
     
-    public string CountyCode { get; set; } // TUR
+    public string CountryCode { get; set; } // TUR
     public string Phone { get; set; }
     public bool IsDefault { get; set; }
 }
