@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "dgG10MGl9eE=",
+  "dgSpecHash": "PgMsU18eew3urteQbvDjnRLAZ8PY7GvrHA9AhNju1uiynwqdM2+A5OJNdau9o7OmD6IYyPogsvdbj/ucH3V+DQ==",
   "success": true,
-  "projectFilePath": "/Users/ksensazli/Papara324-Bootcamp/pk-ppr/Para.Api/Para.Schema/Para.Schema.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Schema/Para.Schema.csproj",
+  "expectedPackageFiles": [
+    "/Users/ksensazli/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
+    "/Users/ksensazli/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

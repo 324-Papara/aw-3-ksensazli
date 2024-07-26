@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ksensazli/Papara324-Bootcamp/pk-ppr/Para.Api/Para.Data/Para.Data.csproj": {}
+    "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Data/Para.Data.csproj": {}
   },
   "projects": {
-    "/Users/ksensazli/Papara324-Bootcamp/pk-ppr/Para.Api/Para.Base/Para.Base.csproj": {
+    "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Base/Para.Base.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ksensazli/Papara324-Bootcamp/pk-ppr/Para.Api/Para.Base/Para.Base.csproj",
+        "projectUniqueName": "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Base/Para.Base.csproj",
         "projectName": "Para.Base",
-        "projectPath": "/Users/ksensazli/Papara324-Bootcamp/pk-ppr/Para.Api/Para.Base/Para.Base.csproj",
+        "projectPath": "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Base/Para.Base.csproj",
         "packagesPath": "/Users/ksensazli/.nuget/packages/",
-        "outputPath": "/Users/ksensazli/Papara324-Bootcamp/pk-ppr/Para.Api/Para.Base/obj/",
+        "outputPath": "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Base/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ksensazli/.nuget/NuGet/NuGet.Config"
@@ -32,11 +32,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -62,14 +57,14 @@
         }
       }
     },
-    "/Users/ksensazli/Papara324-Bootcamp/pk-ppr/Para.Api/Para.Data/Para.Data.csproj": {
+    "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Data/Para.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ksensazli/Papara324-Bootcamp/pk-ppr/Para.Api/Para.Data/Para.Data.csproj",
+        "projectUniqueName": "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Data/Para.Data.csproj",
         "projectName": "Para.Data",
-        "projectPath": "/Users/ksensazli/Papara324-Bootcamp/pk-ppr/Para.Api/Para.Data/Para.Data.csproj",
+        "projectPath": "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Data/Para.Data.csproj",
         "packagesPath": "/Users/ksensazli/.nuget/packages/",
-        "outputPath": "/Users/ksensazli/Papara324-Bootcamp/pk-ppr/Para.Api/Para.Data/obj/",
+        "outputPath": "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ksensazli/.nuget/NuGet/NuGet.Config"
@@ -84,8 +79,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/ksensazli/Papara324-Bootcamp/pk-ppr/Para.Api/Para.Base/Para.Base.csproj": {
-                "projectPath": "/Users/ksensazli/Papara324-Bootcamp/pk-ppr/Para.Api/Para.Base/Para.Base.csproj"
+              "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Base/Para.Base.csproj": {
+                "projectPath": "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Base/Para.Base.csproj"
               }
             }
           }
@@ -94,11 +89,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
