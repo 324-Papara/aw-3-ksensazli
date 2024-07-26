@@ -1,4 +1,5 @@
 using AutoMapper;
+using FluentValidation;
 using MediatR;
 using Para.Base.Response;
 using Para.Bussiness.Cqrs;
@@ -8,66 +9,46 @@ using Para.Schema;
 
 namespace Para.Bussiness.Command;
 
-public class CustomerDetailCommandHandler : 
+public class CustomerDetailCommandHandler :
     IRequestHandler<CreateCustomerDetailCommand, ApiResponse<CustomerDetailResponse>>,
     IRequestHandler<UpdateCustomerDetailCommand, ApiResponse>,
     IRequestHandler<DeleteCustomerDetailCommand, ApiResponse>
 {
     private readonly IUnitOfWork unitOfWork;
     private readonly IMapper mapper;
+    private readonly IValidator<CustomerRequest> validator;
 
-    public CustomerDetailCommandHandler(IUnitOfWork unitOfWork, IMapper mapper)
+    public CustomerDetailCommandHandler(IUnitOfWork unitOfWork, IMapper mapper, IValidator<CustomerRequest> validator)
     {
         this.unitOfWork = unitOfWork;
         this.mapper = mapper;
+        this.validator = validator;
     }
-    
+
     public async Task<ApiResponse<CustomerDetailResponse>> Handle(CreateCustomerDetailCommand request, CancellationToken cancellationToken)
     {
-        var detail = mapper.Map<CustomerDetail>(request.Request);
-        detail.CustomerId = request.CustomerDetailId;
-
-        var existingDetail = await unitOfWork.CustomerDetailRepository.GetById(request.CustomerDetailId);
-        if (existingDetail != null)
-        {
-            return new ApiResponse<CustomerDetailResponse>(false)
-            {
-                Message = "Customer details already exist."
-            };
-        }
-
-        await unitOfWork.CustomerDetailRepository.Insert(detail);
+        var mapped = mapper.Map<CustomerDetailRequest, Customer>(request.Request);
+        mapped.CustomerNumber = new Random().Next(1000000, 9999999);
+        await unitOfWork.CustomerRepository.Insert(mapped);
         await unitOfWork.Complete();
 
-        var response = mapper.Map<CustomerDetailResponse>(detail);
+        var response = mapper.Map<CustomerDetailResponse>(mapped);
         return new ApiResponse<CustomerDetailResponse>(response);
     }
 
     public async Task<ApiResponse> Handle(UpdateCustomerDetailCommand request, CancellationToken cancellationToken)
     {
-        var detail = await unitOfWork.CustomerDetailRepository.GetById(request.CustomerDetailId);
-        if (detail == null)
-        {
-            return new ApiResponse()
-            {
-                Message = "Customer details not found."
-            };
-        }
-
-        mapper.Map(request.Request, detail);
-        unitOfWork.CustomerDetailRepository.Update(detail);
+        var mapped = mapper.Map<CustomerDetailRequest, Customer>(request.Request);
+        mapped.Id = request.CustomerDetailId;
+        unitOfWork.CustomerRepository.Update(mapped);
         await unitOfWork.Complete();
         return new ApiResponse();
     }
 
     public async Task<ApiResponse> Handle(DeleteCustomerDetailCommand request, CancellationToken cancellationToken)
     {
-        var detail = await unitOfWork.CustomerDetailRepository.GetById(request.CustomerDetailId);
-        if (detail != null)
-        {
-            await unitOfWork.CustomerDetailRepository.Delete(detail.CustomerId);
-            await unitOfWork.Complete();
-        }
+        await unitOfWork.CustomerRepository.Delete(request.CustomerDetailId);
+        await unitOfWork.Complete();
         return new ApiResponse();
     }
 }

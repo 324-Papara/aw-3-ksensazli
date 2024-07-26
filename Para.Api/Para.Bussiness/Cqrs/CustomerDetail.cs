@@ -4,9 +4,10 @@ using Para.Schema;
 
 namespace Para.Bussiness.Cqrs;
 
-public record CreateCustomerDetailCommand(long CustomerDetailId, CustomerDetailRequest Request) : IRequest<ApiResponse<CustomerDetailResponse>>;
+public record CreateCustomerDetailCommand(CustomerDetailRequest Request) : IRequest<ApiResponse<CustomerDetailResponse>>;
 public record UpdateCustomerDetailCommand(long CustomerDetailId,CustomerDetailRequest Request) : IRequest<ApiResponse>;
 public record DeleteCustomerDetailCommand(long CustomerDetailId) : IRequest<ApiResponse>;
 
 public record GetAllCustomerDetailQuery() : IRequest<ApiResponse<List<CustomerDetailResponse>>>;
 public record GetCustomerDetailByIdQuery(long CustomerDetailId) : IRequest<ApiResponse<CustomerDetailResponse>>;
+public record GetCustomerDetailByParametersQuery(long CustomerDetailId, string FatherName, string MotherName) : IRequest<ApiResponse<List<CustomerDetailResponse>>>;

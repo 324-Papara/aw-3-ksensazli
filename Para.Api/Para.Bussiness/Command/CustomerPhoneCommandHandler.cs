@@ -24,31 +24,27 @@ public class CustomerPhoneCommandHandler :
 
     public async Task<ApiResponse<CustomerPhoneResponse>> Handle(CreateCustomerPhoneCommand request, CancellationToken cancellationToken)
     {
-        var phone = mapper.Map<CustomerPhone>(request.Request);
-        await unitOfWork.CustomerPhoneRepository.Insert(phone);
+        var mapped = mapper.Map<CustomerPhoneRequest, CustomerPhone>(request.Request);
+        await unitOfWork.CustomerPhoneRepository.Insert(mapped);
         await unitOfWork.Complete();
 
-        var response = mapper.Map<CustomerPhoneResponse>(phone);
+        var response = mapper.Map<CustomerPhoneResponse>(mapped);
         return new ApiResponse<CustomerPhoneResponse>(response);
     }
 
     public async Task<ApiResponse> Handle(UpdateCustomerPhoneCommand request, CancellationToken cancellationToken)
     {
-        var phone = mapper.Map<CustomerPhone>(request.Request);
-        phone.CustomerId = request.CustomerPhoneId;
-        unitOfWork.CustomerPhoneRepository.Update(phone);
+        var mapped = mapper.Map<CustomerPhoneRequest, CustomerPhone>(request.Request);
+        mapped.Id = request.CustomerPhoneId;
+        unitOfWork.CustomerPhoneRepository.Update(mapped);
         await unitOfWork.Complete();
         return new ApiResponse();
     }
 
     public async Task<ApiResponse> Handle(DeleteCustomerPhoneCommand request, CancellationToken cancellationToken)
     {
-        var phone = await unitOfWork.CustomerPhoneRepository.GetById(request.CustomerPhoneId);
-        if (phone != null)
-        {
-            await unitOfWork.CustomerPhoneRepository.Delete(phone.Id);
-            await unitOfWork.Complete();
-        }
+        await unitOfWork.CustomerPhoneRepository.Delete(request.CustomerPhoneId);
+        await unitOfWork.Complete();
         return new ApiResponse();
     }
 }
