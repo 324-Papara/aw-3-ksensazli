@@ -526,3 +526,6 @@
 /Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Api/obj/Debug/net8.0/Para.Api.pdb
 /Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Api/obj/Debug/net8.0/Para.Api.genruntimeconfig.cache
 /Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Api/obj/Debug/net8.0/ref/Para.Api.dll
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Api/bin/Debug/net8.0/Autofac.dll
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Api/bin/Debug/net8.0/Autofac.Extensions.DependencyInjection.dll
+/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Api/bin/Debug/net8.0/Dapper.dll

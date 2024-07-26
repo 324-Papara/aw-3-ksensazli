@@ -10,4 +10,3 @@ public record DeleteCustomerDetailCommand(long CustomerDetailId) : IRequest<ApiR
 
 public record GetAllCustomerDetailQuery() : IRequest<ApiResponse<List<CustomerDetailResponse>>>;
 public record GetCustomerDetailByIdQuery(long CustomerDetailId) : IRequest<ApiResponse<CustomerDetailResponse>>;
-public record GetCustomerDetailByParametersQuery(long CustomerDetailId, string FatherName, string MotherName) : IRequest<ApiResponse<List<CustomerDetailResponse>>>;

@@ -1,6 +1,5 @@
 using FluentValidation;
 using Para.Schema;
-using Para.Data.Domain;
 
 namespace Para.Bussiness.Validations;
 

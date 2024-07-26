@@ -12,5 +12,3 @@ public record ValidateCustomerCommand(CustomerRequest CustomerRequest) : IReques
 public record GetAllCustomerQuery() : IRequest<ApiResponse<List<CustomerResponse>>>;
 public record GetCustomerByIdQuery(long CustomerId) : IRequest<ApiResponse<CustomerResponse>>;
 public record GetCustomerByParametersQuery(long CustomerId,string Name,string IdentityNumber) : IRequest<ApiResponse<List<CustomerResponse>>>;
-public record GetCustomersWithIncludesQuery() : IRequest<ApiResponse<List<CustomerResponse>>>;
-public record GetCustomersByNameQuery(string Name) : IRequest<ApiResponse<List<CustomerResponse>>>;
