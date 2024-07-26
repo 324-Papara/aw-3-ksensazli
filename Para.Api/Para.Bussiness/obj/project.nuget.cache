@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Yxq+jK/zZSweOiHCta7a+ahlS2zwA+vqSFlllR+y154Ij5vlU1C6Ohgv7mwrUjAzvHr88IX2cS05Vu/D0y/Q7A==",
+  "dgSpecHash": "/p89uLSEeW+gebiizw0oIjEiLf/4aczrJFbym0cBxdg5Khk8QCQtzKOfbKoqMzDPEulAcUaGcXONWXv5rZ/Scw==",
   "success": true,
   "projectFilePath": "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Bussiness/Para.Bussiness.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "/Users/ksensazli/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
+    "/Users/ksensazli/.nuget/packages/dapper/2.1.35/dapper.2.1.35.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/fluentvalidation/11.9.2/fluentvalidation.11.9.2.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.9.2/fluentvalidation.dependencyinjectionextensions.11.9.2.nupkg.sha512",

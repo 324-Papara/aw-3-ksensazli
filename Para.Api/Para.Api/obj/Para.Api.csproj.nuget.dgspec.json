@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.9.2, )"
@@ -165,6 +169,10 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.9.2, )"
@@ -246,6 +254,10 @@
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
             },
             "FluentValidation": {
               "target": "Package",
@@ -333,6 +345,10 @@
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
             },
             "FluentValidation": {
               "target": "Package",
@@ -436,6 +452,10 @@
             "Autofac.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
             },
             "FluentValidation": {
               "target": "Package",
