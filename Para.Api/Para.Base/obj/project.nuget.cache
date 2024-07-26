@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "XfGvLCe+4evcOfJ8L/LF0Pew+t34mYTe7NJxJe1mxbaLi/Gr6FWJJTmRgmhlkSKD9CZJHQ+lHYHFYdAoQfoAmA==",
+  "dgSpecHash": "OGH0cNWvB0IkjX29OT+GcE7xQ6/UXXIH4ayMuxRhMnWvmeY+6ELGidmuIHXFfNLen/t9MB4HppMuy5/6KZq7CA==",
   "success": true,
   "projectFilePath": "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Base/Para.Base.csproj",
   "expectedPackageFiles": [
+    "/Users/ksensazli/.nuget/packages/autofac/8.0.0/autofac.8.0.0.nupkg.sha512",
+    "/Users/ksensazli/.nuget/packages/autofac.extensions.dependencyinjection/9.0.0/autofac.extensions.dependencyinjection.9.0.0.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/fluentvalidation/11.9.2/fluentvalidation.11.9.2.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.9.2/fluentvalidation.dependencyinjectionextensions.11.9.2.nupkg.sha512",
-    "/Users/ksensazli/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/2.1.0/microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
+    "/Users/ksensazli/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/ksensazli/.nuget/packages/system.diagnostics.diagnosticsource/7.0.2/system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YAkIekXDpPGgHfCU4nlpMRRkQyk8DNZrwzE5+bUHRcDB/bp6HRu1VSfETOMBs2gMYG04m1V+TPyVZHps09ExEQ==",
+  "dgSpecHash": "Yxq+jK/zZSweOiHCta7a+ahlS2zwA+vqSFlllR+y154Ij5vlU1C6Ohgv7mwrUjAzvHr88IX2cS05Vu/D0y/Q7A==",
   "success": true,
   "projectFilePath": "/Users/ksensazli/VS Code Projects/aw-3-ksensazli/Para.Api/Para.Bussiness/Para.Bussiness.csproj",
   "expectedPackageFiles": [
+    "/Users/ksensazli/.nuget/packages/autofac/8.0.0/autofac.8.0.0.nupkg.sha512",
+    "/Users/ksensazli/.nuget/packages/autofac.extensions.dependencyinjection/9.0.0/autofac.extensions.dependencyinjection.9.0.0.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/automapper/11.0.1/automapper.11.0.1.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
@@ -63,7 +65,7 @@
     "/Users/ksensazli/.nuget/packages/system.composition.runtime/6.0.0/system.composition.runtime.6.0.0.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/system.composition.typedparts/6.0.0/system.composition.typedparts.6.0.0.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/system.configuration.configurationmanager/6.0.1/system.configuration.configurationmanager.6.0.1.nupkg.sha512",
-    "/Users/ksensazli/.nuget/packages/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "/Users/ksensazli/.nuget/packages/system.diagnostics.diagnosticsource/7.0.2/system.diagnostics.diagnosticsource.7.0.2.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/system.drawing.common/6.0.0/system.drawing.common.6.0.0.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/system.formats.asn1/5.0.0/system.formats.asn1.5.0.0.nupkg.sha512",
     "/Users/ksensazli/.nuget/packages/system.identitymodel.tokens.jwt/6.35.0/system.identitymodel.tokens.jwt.6.35.0.nupkg.sha512",
